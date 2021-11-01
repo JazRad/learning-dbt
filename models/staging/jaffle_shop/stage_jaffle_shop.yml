@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: stg_customers
+  - name: stg__jaffle_shop__customers
     description: One unique customer per row
     columns:
       - name: customer_id
@@ -10,7 +10,7 @@ models:
           - unique
           - not_null
 
-  - name: stg_orders
+  - name: stg_jaffle_shop__orders
     columns:
       - name: status
         description: '{{ doc("order_status") }}'
